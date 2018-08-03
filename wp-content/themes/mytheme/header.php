@@ -6,7 +6,6 @@
  * Time: 13:54
  */
 ?>
-<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -26,12 +25,19 @@
 <body>
 <div class="blog-head">
     <div class="container">
-            <nav class="blog-nav nav">
-                <a class="blog-nav-item nav-link active" href="#">Home</a>
-                <a class="blog-nav-item nav-link" href="#">New features</a>
-                <a class="blog-nav-item nav-link" href="#">Press</a>
-                <a class="blog-nav-item nav-link" href="#">New hires</a>
-                <a class="blog-nav-item nav-link" href="#">About</a>
+            <nav class="blog-nav">
+            <?php
+                wp_nav_menu( array(
+                    'theme_location'  => 'primary',
+                    'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                    'container'       => 'div',
+                    'container_class' => 'collapse navbar-collapse',
+                    'container_id'    => 'bs-example-navbar-collapse-1',
+                    'menu_class'      => 'navbar-nav mr-auto',
+                    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker'          => new WP_Bootstrap_Navwalker(),
+                ) );
+            ?>
             </nav>
     </div>
 </div>
