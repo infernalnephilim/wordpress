@@ -8,6 +8,7 @@ if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.ph
 	// file exists... require it.
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
+require_once get_template_directory() . '/bootstrap-4-nav-walker.php';
 // Theme support
 function wpb_theme_setup(){
  // nav menus
@@ -18,3 +19,5 @@ function wpb_theme_setup(){
 }
 
 add_action('after_setup_theme', 'wpb_theme_setup');
+
+?>
