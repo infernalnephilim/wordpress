@@ -16,7 +16,8 @@
     <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>/style.css">
+   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(111,999)?>">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,7 +25,8 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-topbar navbar-dark bg-primary">
+
+<nav class="navbar navbar-expand-lg navbar-topbar">
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
     &#9776;
   </button>
@@ -49,6 +51,6 @@
     <div class="container">
         <h1><?php bloginfo('name'); ?></h1>
         <p><?php bloginfo('description'); ?></p>
-        <a class="btn btn-primary btn-lg">Read More</a>
+        <!--<a class="btn btn-primary btn-lg">Read More</a>-->
     </div>
 </section>

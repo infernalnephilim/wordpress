@@ -62,4 +62,4 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 Register Navbar
 */
 
-register_nav_menu('navbar', __('Navbar', 'mytheme'));
+//register_nav_menu('navbar', __('Navbar', 'mytheme'));

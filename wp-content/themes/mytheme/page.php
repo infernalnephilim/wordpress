@@ -7,10 +7,17 @@
             <div class="col-sm-8 blog-main">
             <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
-                    <?php get_template_part('content', get_post_format()); ?>
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">
+                            <?php the_title(); ?>
+                        </h2>
+
+                        <?php the_content(); ?>
+
+                    </div>
                 <?php endwhile; ?>
             <?php else : ?>
-                <p><?php __('There are no posts yet'); ?></p>
+                <p><?php __('No page found'); ?></p>
             <?php endif; ?>
             </div><!-- /.blog-main -->
         </div>

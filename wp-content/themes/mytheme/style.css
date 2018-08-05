@@ -14,12 +14,31 @@ Text Domain: mytheme
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@import "https://fonts.googleapis.com/css?family=Roboto";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif; }
 
-.blog-head {
-  background: #eee; }
+nav.navbar {
+  background: #007BFF; }
+  nav.navbar a {
+    color: #fff; }
+    nav.navbar a:hover {
+      color: #00a0d2; }
+
+.showcase {
+  background: #fff;
+  padding: 50px 0px; }
+
+.boxes {
+  padding: 20px 0px; }
+
+.post-thumb {
+  margin-bottom: 10px; }
+  .post-thumb img {
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=style.css.map */
