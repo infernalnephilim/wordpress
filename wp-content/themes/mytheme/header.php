@@ -49,8 +49,12 @@
 
 <section class="showcase">
     <div class="container">
-        <h1><?php bloginfo('name'); ?></h1>
-        <p><?php bloginfo('description'); ?></p>
-        <!--<a class="btn btn-primary btn-lg">Read More</a>-->
+        <div class="site-header">
+            <h1><?php bloginfo('name'); ?></h1>
+            <p><?php bloginfo('description'); ?></p>
+            <img id="header-img" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>"/>
+
+            <!--<a class="btn btn-primary btn-lg">Read More</a>-->
+        </div>
     </div>
 </section>
