@@ -1,6 +1,6 @@
 /* global isRtl */
 /**
- * @file Revisions interface functions, Backbone classes and
+ * @file Revisions interface functions.php, Backbone classes and
  * the revisions.php document.ready bootstrap.
  *
  */
@@ -32,7 +32,7 @@ window.wp = window.wp || {};
 		}
 	};
 
-	// Handy functions to help with positioning
+	// Handy functions.php to help with positioning
 	$.fn.allOffsets = function() {
 		var offset = this.offset() || {top: 0, left: 0}, win = $(window);
 		return _.extend( offset, {

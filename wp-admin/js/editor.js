@@ -4,7 +4,7 @@ window.wp = window.wp || {};
 	wp.editor = wp.editor || {};
 
 	/**
-	 * @summary Utility functions for the editor.
+	 * @summary Utility functions.php for the editor.
 	 *
 	 * @since 2.5.0
 	 */

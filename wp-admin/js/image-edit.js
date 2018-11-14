@@ -1,6 +1,6 @@
 /* global imageEditL10n, ajaxurl, confirm */
 /**
- * @summary   The functions necessary for editing images.
+ * @summary   The functions.php necessary for editing images.
  *
  * @since     2.9.0
  */

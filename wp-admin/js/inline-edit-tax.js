@@ -6,7 +6,7 @@
 window.wp = window.wp || {};
 
 /**
- * Consists of functions relevant to the inline taxonomy editor.
+ * Consists of functions.php relevant to the inline taxonomy editor.
  *
  * @namespace inlineEditTax
  *

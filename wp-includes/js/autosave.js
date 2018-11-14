@@ -28,7 +28,7 @@ window.autosave = function() {
 	 * 		local: ({hasStorage, getSavedPostData, save, suspend, resume}|*),
 	 * 		server: ({tempBlockSave, triggerSave, postChanged, suspend, resume}|*)}
 	 * 	}
-	 * 	The object with all functions for autosave.
+	 * 	The object with all functions.php for autosave.
 	 */
 	function autosave() {
 		var initialCompareString,
@@ -168,7 +168,7 @@ window.autosave = function() {
 		 * 	resume: resume
 		 * 	}
 		 * }
-		 * The object with all functions for local storage autosave.
+		 * The object with all functions.php for local storage autosave.
 		 */
 		function autosaveLocal() {
 			var blog_id, post_id, hasStorage, intervalTimer,
@@ -587,7 +587,7 @@ window.autosave = function() {
 		 * 		suspend: suspend,
 		 * 		resume: resume
 		 * 		}
-		 * 	} The object all functions for autosave.
+		 * 	} The object all functions.php for autosave.
 		 */
 		function autosaveServer() {
 			var _blockSave, _blockSaveTimer, previousCompareString, lastCompareString,

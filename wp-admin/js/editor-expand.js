@@ -158,7 +158,7 @@
 
 		// We need to wait for TinyMCE to initialize.
 		/**
-		 * @summary Binds all necessary functions for editor expand to the editor
+		 * @summary Binds all necessary functions.php for editor expand to the editor
 		 * when the editor is initialized.
 		 *
 		 * @since 4.0.0
@@ -359,7 +359,7 @@
 			/**
 			 * @summary Resizes the editor.
 			 *
-			 * Removes all functions from the window scroll.mce-float-panels event.
+			 * Removes all functions.php from the window scroll.mce-float-panels event.
 			 * Resizes the text editor and scrolls to a position based on the pageXOffset and adminBarHeight.
 			 *
 			 * @since 4.0.0

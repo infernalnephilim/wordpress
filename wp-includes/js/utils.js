@@ -1,9 +1,9 @@
 /* global userSettings */
 /* exported getUserSetting, setUserSetting, deleteUserSetting */
-// utility functions
+// utility functions.php
 
 var wpCookies = {
-// The following functions are from Cookie.js class in TinyMCE 3, Moxiecode, used under LGPL.
+// The following functions.php are from Cookie.js class in TinyMCE 3, Moxiecode, used under LGPL.
 
 	each: function( obj, cb, scope ) {
 		var n, l;

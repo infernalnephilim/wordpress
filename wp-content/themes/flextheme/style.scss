@@ -1,0 +1,149 @@
+$default-text-color: #000;
+$header-text-color: #fff;
+$hover-text-color: #fff;
+
+$hover-bg-color: #118acc;
+
+@mixin transition($item, $type, $time) {
+  -webkit-transition: $item $type $time;
+  -moz-transition: $item $type $time;
+  -ms-transition: $item $type $time;
+  -o-transition: $item $type $time;
+  transition: $item $type $time;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $default-text-color;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  &__logo {
+    flex-basis: 200px;
+    //flex: 1;
+    img {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+  &__navbar {
+    flex: 2;
+  }
+  .navbar {
+    list-style-type: none;
+    display: inline-flex;
+
+    justify-content: flex-end;
+    align-items: center;
+    &__item {
+      padding: 1rem;
+      margin-left: 10px;
+      border-radius: 10px;
+      @include transition(all, ease, .5s);
+      a {
+        @include transition(all, ease, .5s);
+      }
+      &:hover {
+        background: $hover-bg-color;
+        a {
+          color: $hover-text-color;
+        }
+
+      }
+    }
+
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  overflow: hidden;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+  }
+  &__text {
+    background: rgba(17, 138, 204, 0.7);
+    position: relative;
+    z-index: 10;
+    color: $header-text-color;
+    padding: 2rem;
+    border-radius: 10px;
+
+  }
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  &--nopadding{
+    padding: 0;
+  }
+  &--videobg{
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__bg {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    video {
+      width: 100%;
+      opacity: .5;
+      source {
+        width: 100%;
+      }
+
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    .item {
+      width: 100%;
+      padding: 4rem 2rem;
+    }
+    &--a {
+      .item {
+        margin: 10px;
+        text-align: center;
+        i {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 40px;
+}

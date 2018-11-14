@@ -3355,7 +3355,7 @@
   /**
    * Modifier function, each modifier can have a function of this type assigned
    * to its `fn` property.<br />
-   * These functions will be called on each update, this means that you must
+   * These functions.php will be called on each update, this means that you must
    * make sure they are performant enough to avoid performance bottlenecks.
    *
    * @function ModifierFn

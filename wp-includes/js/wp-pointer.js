@@ -124,7 +124,7 @@
 		},
 
 		/**
-		 * Update is separated into two functions to allow events to defer
+		 * Update is separated into two functions.php to allow events to defer
 		 * updating the pointer (e.g. fetch content with ajax, etc).
 		 */
 		_update: function( event, content ) {

@@ -1,6 +1,6 @@
 /* global screenReaderText */
 /**
- * Theme functions file.
+ * Theme functions.php file.
  *
  * Contains handlers for navigation and widget area.
  */

@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px; }
+  .nav__logo {
+    flex-basis: 200px; }
+    .nav__logo img {
+      object-fit: contain;
+      max-width: 100%; }
+  .nav__navbar {
+    flex: 2; }
+  .nav .navbar {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .nav .navbar__item {
+      padding: 1rem;
+      margin-left: 10px;
+      border-radius: 10px;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
+      .nav .navbar__item a {
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+      .nav .navbar__item:hover {
+        background: #118acc; }
+        .nav .navbar__item:hover a {
+          color: #fff; }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  overflow: hidden; }
+  .header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%; }
+  .header__text {
+    background: rgba(17, 138, 204, 0.7);
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px; }
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative; }
+  .section--nopadding {
+    padding: 0; }
+  .section--videobg {
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden; }
+  .section__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; }
+    .section__bg video {
+      width: 100%;
+      opacity: .5; }
+      .section__bg video source {
+        width: 100%; }
+  .section__content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex; }
+    .section__content .item {
+      width: 100%;
+      padding: 4rem 2rem; }
+    .section__content--a .item {
+      margin: 10px;
+      text-align: center; }
+      .section__content--a .item i {
+        font-size: 4rem; }
+
+footer {
+  margin-top: 40px; }
+
+/*# sourceMappingURL=style.css.map */

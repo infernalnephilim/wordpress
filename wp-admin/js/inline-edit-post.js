@@ -1,6 +1,6 @@
 /* global inlineEditL10n, ajaxurl, typenow */
 /**
- * This file contains the functions needed for the inline editing of posts.
+ * This file contains the functions.php needed for the inline editing of posts.
  *
  * @since 2.7.0
  */

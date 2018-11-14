@@ -5,7 +5,7 @@
 	/**
 	 * wp.sanitize
 	 *
-	 * Helper functions to sanitize strings.
+	 * Helper functions.php to sanitize strings.
 	 */
 	wp.sanitize = {
 

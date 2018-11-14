@@ -44,7 +44,7 @@
 		Usage Note:
 		-----------
 		Do not use both ajaxSubmit and ajaxForm on the same form. These
-		functions are mutually exclusive. Use ajaxSubmit if you want
+		functions.php are mutually exclusive. Use ajaxSubmit if you want
 		to bind your own submit handler to the form. For example,
 
 		$(document).ready(function() {
@@ -1065,13 +1065,13 @@
 
 	/**
 	 * formToArray() gathers form element data into an array of objects that can
-	 * be passed to any of the following ajax functions: $.get, $.post, or load.
+	 * be passed to any of the following ajax functions.php: $.get, $.post, or load.
 	 * Each object in the array has both a 'name' and 'value' property. An example of
 	 * an array for a simple login form might be:
 	 *
 	 * [ { name: 'username', value: 'jresig' }, { name: 'password', value: 'secret' } ]
 	 *
-	 * It is this array that is passed to pre-submit callback functions provided to the
+	 * It is this array that is passed to pre-submit callback functions.php provided to the
 	 * ajaxSubmit() and ajaxForm() methods.
 	 */
 	$.fn.formToArray = function(semantic, elements, filtering) {

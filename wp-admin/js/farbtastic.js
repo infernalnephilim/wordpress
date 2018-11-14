@@ -199,7 +199,7 @@ $._farbtastic = function (container, callback) {
     }
   };
 
-  /* Various color utility functions */
+  /* Various color utility functions.php */
   fb.pack = function (rgb) {
     var r = Math.round(rgb[0] * 255);
     var g = Math.round(rgb[1] * 255);

@@ -590,7 +590,7 @@ var wpNavMenu;
 			// init postboxes
 			postboxes.add_postbox_toggles('nav-menus');
 
-			// adjust columns functions for menus UI
+			// adjust columns functions.php for menus UI
 			columns.useCheckboxesForHidden();
 			columns.checked = function(field) {
 				$('.field-' + field).removeClass('hidden-field');

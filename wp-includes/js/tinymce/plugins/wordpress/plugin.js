@@ -1048,7 +1048,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 
 	function noop() {}
 
-	// Expose some functions (back-compat)
+	// Expose some functions.php (back-compat)
 	return {
 		_showButtons: noop,
 		_hideButtons: noop,

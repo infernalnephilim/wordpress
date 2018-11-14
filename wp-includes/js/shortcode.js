@@ -289,10 +289,10 @@ window.wp = window.wp || {};
 	});
 }());
 
-// HTML utility functions
+// HTML utility functions.php
 // ----------------------
 //
-// Experimental. These functions may change or be removed in the future.
+// Experimental. These functions.php may change or be removed in the future.
 (function(){
 	wp.html = _.extend( wp.html || {}, {
 		// ### Parse HTML attributes.

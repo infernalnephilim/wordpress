@@ -598,7 +598,7 @@ jQuery.fn.toggle = function( fn, fn2 ) {
 			return args[ lastToggle ].apply( this, arguments ) || false;
 		};
 
-	// link all the functions, so any of them can unbind this click handler
+	// link all the functions.php, so any of them can unbind this click handler
 	toggler.guid = guid;
 	while ( i < args.length ) {
 		args[ i++ ].guid = guid;
